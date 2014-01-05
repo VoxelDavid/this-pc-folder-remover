@@ -1,0 +1,35 @@
+Windows Registry Editor Version 5.00
+
+; This little registry file removes Desktop, Documents Downloads,
+; Music, Pictures and Videos from This PC.
+;
+; Links to these folders was added automatically in Windows 8.1,
+; and the only way to remove them is through the Registry.
+;
+; I found that incredibly annoying so I went around and found the
+; information to make this quick little script to remove them.
+;
+; I was really hoping for a way to only have one path for all the
+; keys, but I didn't find anything. Please submit a pull request
+; if you know how!
+;
+; — David Minnerly (github.com/voxeldavid)
+
+
+; Music
+[-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
+
+; Downloads
+[-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{374DE290-123F-4565-9164-39C4925E4678}]
+
+; Pictures
+[-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
+
+; Videos
+[-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
+
+; Documents
+[-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
+
+; Desktop
+[-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-BO29-7FE99A87C641}]
