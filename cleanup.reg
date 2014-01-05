@@ -1,20 +1,6 @@
 Windows Registry Editor Version 5.00
 
-; This little registry file removes Desktop, Documents Downloads,
-; Music, Pictures and Videos from This PC.
-;
-; Links to these folders was added automatically in Windows 8.1,
-; and the only way to remove them is through the Registry.
-;
-; I found that incredibly annoying so I went around and found the
-; information to make this quick little script to remove them.
-;
-; I was really hoping for a way to only have one path for all the
-; keys, but I didn't find anything. Please submit a pull request
-; if you know how!
-;
-; — David Minnerly (github.com/voxeldavid)
-
+; Remove the entries from the NameSpaces key.
 
 ; Music
 [-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
