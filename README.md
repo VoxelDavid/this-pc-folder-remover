@@ -1,10 +1,10 @@
 
 # This PC Cleanup
 
-This little registry file removes the links to Desktop, Documents Downloads, Music, Pictures and Videos from This PC.
+This little registry file removes Desktop, Documents Downloads, Music, Pictures and Videos from This PC.
 
-Links to these folders was added automatically in Windows 8.1, and the only way to remove them is through the Registry. I found that incredibly annoying so I went around and found the information to make this quick little script to remove them.
+Links to these folders was added automatically in Windows 8.1, with the only way to remove them being through the Registry. I really didn't like having folders there so I wanted to make an easy way of removing them, as I can't be the only one to dislike this decision.
 
-I was really hoping for a way to only have one path for all the keys, but I didn't find anything. Please submit a pull request if you know how!
+I've also included a backup of the NameSpaces key, incase you do want the folders there.
 
 &ndash; [David Minnerly](http://github.com/voxeldavid)
