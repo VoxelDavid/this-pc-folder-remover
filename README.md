@@ -1,5 +1,5 @@
 
-# [This PC Cleanup](http://github.com/voxeldavid/this-pc-cleanup.git)
+# [This PC Folder Remover](http://github.com/voxeldavid/this-pc-folder-remover.git)
 
 Double click `cleanup.reg` to remove the links to Desktop, Documents, Downloads, Music, Pictures and Videos under This PC.
 
