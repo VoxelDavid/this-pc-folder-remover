@@ -1,8 +1,18 @@
+# This PC Folders
 
-# [This PC Folder Remover](http://github.com/voxeldavid/this-pc-folder-remover.git)
+Python script for hiding and showing the folders under "This PC" on Windows 10.
 
-Double click `cleanup.reg` to remove the links to Desktop, Documents, Downloads, Music, Pictures and Videos under This PC.
+![An example of the script hiding and showing folders under This PC.](screenshots/usage-example.gif)
 
-These folders were added automatically in Windows 8.1 and the only way to remove them is through the Registry. I can't be the only one to dislike the decision to have those folders added there, so I made a little .reg file to remove them easily.
+```bash
+$ python this_pc_folders.py hide
+$ python this_pc_folders.py show
+```
 
-I've also included a backup of the NameSpaces key, incase you do want the folders there.
+This script simply sets the ThicPCPolicy key of all the folders to "Hide" and "Show". It does not modify the registry in any other way.
+
+## Caveats
+
+This implementation is not guaranteed to work on your version of Windows. This script was tested and working on Windows 10 64bit, version 1607, OS Build 14393.576 and working as of December 30, 2016.
+
+It should work on all versions of Windows 10, but could potentially break in future releases.
